@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta Aleatoria - Selector personalizado para Elecciones al azar</title>
+
+    <!-- Favicon (logo.png) para la pestaña -->
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header con imagen y título -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Spin Wheel</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="input-section">
+            <h2>Ingresa las opciones:</h2>
+            <textarea id="options" placeholder="Opción 1&#10;Opción 2&#10;Opción 3"></textarea>
+        </div>
+        <div class="wheel-section">
+            <div class="arrow"></div>
+            <canvas id="wheelCanvas" width="500" height="500"></canvas>
+        </div>
+    </div>
+
+    <!-- Modal para el ganador -->
+    <div id="winnerModal" class="modal">
+        <div class="modal-content">
+            <h2>¡Felicidades!</h2>
+            <p id="winnerMessage"></p>
+            <button id="closeModal">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
